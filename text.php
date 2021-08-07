@@ -19,19 +19,21 @@ function sum3($arr){
     return $result;
 }
 echo sum3(array(1,3,5,7,9));
+echo"\n";
 ?>
 <?php
  function max_array($arr){
  $max_number = $arr[0];
  foreach($arr as $a){
      if($max_number<$a){
-     } elseif($max_number>$a) {
+        $max_number = $a;
      }
  }
  return $max_number;
  }
  echo max_array ([5,2,3,9,7]);
  ?>
+ 
  <?php
  $string = '<a href="http://test.com">Test</a>';
  echo strip_tags("<test>テスト</test>");
